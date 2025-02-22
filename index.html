@@ -6,31 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Touché - Café Restaurant Template</title>
   <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
     header a {
-      color: white;
-      font-size: 12px;
-      font-weight: 700;
+      color: black;
+      font-size: 14px;
+      font-weight: 600;
     }
 
     header .logo a {
-      color: white;
-      font-size: 22px;
-      font-weight: bold;
+      color: black;
+      font-size: 24px;
+      font-weight: 700;
       font-style: italic;
     }
 
-    .banner-content{
+    .banner-content {
       top: 25%;
     }
-    
-    .banner-content button{
-      color: white;
+
+    .banner-content button {
+      color: rgba(0, 0, 0, 0.555);
     }
 
-    .banner-content button:hover{
+    .banner-content button:hover {
       color: rgb(194, 135, 10);
       background: none;
+    }
+
+    .banner .icons{
+      left: 10%;
+      bottom: 0;
+    }
+
+    .banner .location{
+      right: 10%;
+      bottom: 0;
     }
   </style>
 </head>
@@ -39,27 +50,24 @@
 
   <header>
     <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-5">
-          <div class="d-flex justify-content-start position-absolute mt-4">
+      <div class="row d-flex mb-4">
+        <div class="col-md-5">
+          <div class="text-bg-black d-flex justify-content-start align-items-center mt-4">
             <a class="text-decoration-none me-5" href="#">ABOUT US</a>
             <a class="text-decoration-none me-5" href="#">MENU</a>
             <a class="text-decoration-none me-5" href="#">RESERVATION</a>
           </div>
         </div>
-        <div class="col-2">
+        <div class="col-md-2">
           <div class="logo">
-            <a class="text-decoration-none position-absolute mt-3" href="#"> Touché </a>
+            <a class="text-decoration-none d-flex align-items-center mt-3" href="#"> Touché </a>
           </div>
         </div>
-        <div class="col-5">
-          <div class="d-flex justify-content-end position-absolute mt-4">
+        <div class="col-md-5">
+          <div class="d-flex justify-content-end align-items-center mt-4">
             <a class="text-decoration-none me-5" href="#">NEWS & EVENTS</a>
             <a class="text-decoration-none me-5" href="#">GALLERY</a>
             <a class="text-decoration-none me-5" href="#">CONTACT</a>
-            <div class="form-check form-switch form-switch-color-mode ms-lg-3">
-              <input class="form-check-input" type="checkbox" role="switch" id="colorModeSwitch">
-              <label class="form-check-label" for="colodeModeSwitch"></label>
             </div>
           </div>
         </div>
@@ -70,13 +78,38 @@
   <section>
     <div class="banner d-flex justify-content-center">
       <div class="img">
-        <img src="./Images/1.jpg" class="img-fluid" alt="">
+        <img src="./Images/1.jpg" class="img-fluid w-100 h-75" alt="">
       </div>
       <div class="banner-content text-center position-absolute">
-        <p class="mb-4" style="color: rgb(245, 82, 23); font-size: 18px;">Café <span style="color: rgba(41, 34, 34, 0.719); font-weight: 600;">/ Restaurant</span></p>
+        <p class="mb-4" style="color: rgb(245, 82, 23); font-size: 18px;">Café <span
+            style="color: rgba(41, 34, 34, 0.719); font-weight: 600;">/ Restaurant</span></p>
         <h1 class="mb-4" style="color: rgb(15, 13, 13);">Touché</h1>
-        <p class="mb-4" style="color: rgba(53, 51, 51, 0.795); ">A unique café located in the heart of Los Angeles. Always fresh coffee and <br> biscuits. Open for indoor dining and to-go orders.</p>
-        <button class="btn btn-outline-warning border-1" style="padding: 10px; width: 35%; height: 45px; transition: 0.5s;" >MAKE RESERVATION</button>
+        <p class="mb-4" style="color: rgba(53, 51, 51, 0.795); ">A unique café located in the heart of Los Angeles.
+          Always fresh coffee and <br> biscuits. Open for indoor dining and to-go orders.</p>
+        <button class="btn btn-outline-warning border-1"
+          style="padding: 10px; width: 35%; height: 45px; transition: 0.5s;">MAKE RESERVATION</button>
+      </div>
+      <div class="icons position-absolute">
+        <i class="bi bi-twitter me-4 text-white"></i>
+        <i class="bi bi-facebook me-4 text-white"></i>
+        <i class="bi bi-instagram me-4 text-white"></i>
+      </div>
+      <div class="location position-absolute">
+        <i class="bi bi-geo-alt-fill text-warning"><span class="text-white-50 ms-2">1234 Dining Str., Los Angeles, CA 12345-0000</span></i>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="break">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="d-inline-block me-5 fs-5 fw-bold ">Take a coffee break <br> or enjoy a meal.</p>
+            <img src="./Images/2.jpg" class="img-fluid h-50 d-inline-block" alt="">
+            <span class="border"></span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
