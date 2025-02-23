@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
+    body {
+      font-style: oblique;
+    }
+
     header a {
       color: black;
       font-size: 14px;
@@ -30,7 +34,7 @@
     }
 
     .banner-content button:hover {
-      color: rgb(194, 135, 10);
+      color: orangered;
       background: none;
     }
 
@@ -42,6 +46,51 @@
     .banner .location {
       right: 10%;
       bottom: 0;
+    }
+
+    .news .input button {
+      color: rgba(0, 0, 0, 0.555);
+    }
+
+    .news .input button:hover {
+      color: orangered;
+      background: none;
+    }
+
+    .event .img {
+      background-color: black;
+    }
+
+    .event button {
+      color: rgba(0, 0, 0, 0.555);
+    }
+
+    .event button:hover {
+      color: orangered;
+      background: none;
+    }
+
+    .event a {
+      color: rgba(0, 0, 0, 0.555);
+    }
+
+    .event a:hover {
+      color: orangered;
+      background: none;
+    }
+
+    .online button {
+      color: rgba(0, 0, 0, 0.555);
+    }
+
+    .online button:hover {
+      color: orangered;
+      background: none;
+    }
+
+    footer {
+      background-color: black;
+      padding: 90px;
     }
   </style>
 </head>
@@ -86,7 +135,7 @@
         <h1 class="mb-4" style="color: rgb(15, 13, 13);">Touché</h1>
         <p class="mb-4" style="color: rgba(53, 51, 51, 0.795); ">A unique café located in the heart of Los Angeles.
           Always fresh coffee and <br> biscuits. Open for indoor dining and to-go orders.</p>
-        <button class="btn btn-outline-warning border-1"
+        <button class="btn btn-outline-warning border-1 rounded-0"
           style="padding: 10px; width: 35%; height: 45px; transition: 0.5s;">MAKE RESERVATION</button>
       </div>
       <div class="icons position-absolute">
@@ -147,7 +196,7 @@
             <div class="me-5" style="margin-top: 30%;">
               <div class="box border border-2 bg-light position-absolute"
                 style="width: 18%; height: 92%; bottom: 10%; right: 15%;"></div>
-              <img src="./Images/2.jpg" class="img-fluid d-inline-block" style="margin-left: 5px;" alt="">
+              <img src="./Images/7.jpg" class="img-fluid d-inline-block" style="margin-left: 5px;" alt="">
               <div class="box border border-2 bg-outline-light position-absolute"
                 style="width: 18%; height: 92%; top: 25%; margin-left: 5%;"></div>
             </div>
@@ -156,6 +205,363 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="coffee position-relative" style="margin-top: 10%;">
+      <div class="col-md-12">
+        <div class="img">
+          <img src="./Images/19.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="content d-flex justify-content-center">
+          <div class="position-absolute start-75 fw-bold text-center" style="margin-left: 3%; top: 21%;"
+            data-bs-theme="white">
+            <div class="bg-warning mb-3 position-absolute" style="width: 40px; height: 4px; bottom: 60px; left: 37%;">
+            </div>
+            <p class="d-inline-block me-5 fs-6 fw-medium">Enjoy our specialty coffees and award <br> winning doughnuts
+              in a friendly atmosphere.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="online">
+      <div style="background-color: #E9ECEF; padding: 100px;">
+        <div class="container">
+          <div class="row">
+            <div class="title text-center">
+              <h3>Make online reservation</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo <br> praesentium sequi in cum,
+                beatae maiores quae qui.</p>
+            </div>
+            <div class="input d-flex justify-content-center align-items-center mt-4">
+              <div class="col-md-6">
+                <div class="justify-content-end">
+                  <input type="text" class="bg-white border border-secondary-subtle p-3 mb-3"
+                    style="width: 360px; height: 55px; margin-left: 33.5%;" placeholder="Full Name" required>
+                  <input type="text" class="bg-white border border-secondary-subtle p-3 mb-3"
+                    style="width: 360px; height: 55px; margin-left: 33.5%;" placeholder="Phone Number" required>
+                  <input type="text" class="bg-white border border-secondary-subtle p-3 mb-3"
+                    style="width: 360px; height: 55px; margin-left: 33.5%;" placeholder="Email Address" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <select class="form-select bg-white border border-secondary-subtle p-3 mb-3 me-2"
+                  style="width: 360px; height: 55px;" required>
+                  <option value="1">1 persons</option>
+                  <option value="2" selected>2 persons</option>
+                  <option value="3">3 persons</option>
+                  <option value="4">4 persons</option>
+                  <option value="5">5 persons</option>
+                </select>
+                <input type="date" id="date" name="date" value="2021-02-12"
+                  class="bg-white border border-secondary-subtle p-3 mb-3 me-2" style="width: 360px; height: 55px;"
+                  required>
+                <input type="time" id="time" name="time" value="18:00"
+                  class="bg-white border border-secondary-subtle p-3 mb-3 me-2" style="width: 360px; height: 55px;"
+                  required>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-outline-warning rounded-0 p-2 ms-2"
+                style="width: 180px; height: 55px;">RESERVE A TABLE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="client">
+      <div class="container">
+        <div class="row">
+          <div class="title text-center mt-5">
+            <h3>What clients say about us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-md-12">
+            <figure class="text-center">
+              <div class="col-md-6">
+                <img src="./Images/20.jpg" class="img-fluid rounded-circle d-inline-block" style="width: 255px;" alt="">
+              </div>
+              <div class="col-md-6">
+                <blockquote class="blockquote d-inline-block">
+                  <p class="text-start">
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Eos at veritatis vitae modi ex
+                    quis quibusdam error <br> repudiandae adipisci dolore perspiciatis iste, vel fuga a, libero <br>
+                    architecto ratione deleniti sequi."
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-end">
+                  <cite title="Source Title">LIAM SMITH</cite>
+                </figcaption>
+              </div>
+          </figure>
+          </div>
+          <!-- <div class="col-md-12">
+            <figure class="text-end">
+              <div class="col-md-6">
+                <img src="./Images/20.jpg" class="img-fluid rounded-circle d-inline-block" style="width: 255px;" alt="">
+              </div>
+              <div class="col-md-6">
+                <blockquote class="blockquote d-inline-block">
+                  <p class="text-start">
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Eos at veritatis vitae modi ex
+                    quis quibusdam error <br> repudiandae adipisci dolore perspiciatis iste, vel fuga a, libero <br>
+                    architecto ratione deleniti sequi."
+                  </p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-end">
+                  <cite title="Source Title">LIAM SMITH</cite>
+                </figcaption>
+              </div>
+          </figure>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="event">
+      <div class="container">
+        <div class="row">
+          <div class="title text-center mt-5 mb-5">
+            <h3>Upcoming events</h3>
+            <p>Commodi rem veritatis quis eaque mollitia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <button class="btn btn-light d-flex w-100 mb-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseExample">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center mt-2">
+              <h3>30 <br> Sep</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-start">
+              <p class="mt-3 fs-5 text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+                voluptas, aut ea quae!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center">
+              <a href="#" type="button"
+                class="btn btn-outline-warning rounded-0 p-2 ms-2 d-flex justify-content-center align-items-center mt-3"
+                style="width: 175px; height: 53px;">RESERVE A TABLE</a>
+            </div>
+          </div>
+        </button>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <div class="position-relative">
+              <div class="img">
+                <img src="./Images/8.jpg" class="img-fluid w-100" style="height: 575px; opacity: 0.6;" alt="">
+              </div>
+              <div class="content position-absolute text-white-50" style="top: 25%; left: 5%;">
+                <p class="mb-2 text-warning">September 30, 2017</p>
+                <h4 class="mb-4">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. <br> Dolorum voluptas,
+                  aut ea
+                  quae!</h4>
+                <p class="mb-4">Alias earum, labore doloremque iusto a modi et, dolorem <br> veritatis iste quis ab.
+                  Facere
+                  est optio,
+                  voluptate molestias <br> aspernatur impedit perferendis odit?</p>
+                <button type="button" class="btn btn-outline-warning rounded-0 p-2 ms-2"
+                  style="width: 175px; height: 53px;">RESERVE A TABLE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <button class="btn btn-light d-flex w-100 mb-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseExample">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center mt-2">
+              <h3>29 <br> Sep</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-start">
+              <p class="mt-3 fs-5 text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+                voluptas, aut ea quae!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center">
+              <a href="#" type="button"
+                class="btn btn-outline-warning rounded-0 p-2 ms-2 d-flex justify-content-center align-items-center mt-3"
+                style="width: 175px; height: 53px;">RESERVE A TABLE</a>
+            </div>
+          </div>
+        </button>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <div class="position-relative">
+              <div class="img">
+                <img src="./Images/9.jpg" class="img-fluid w-100" style="height: 575px; opacity: 0.6;" alt="">
+              </div>
+              <div class="content position-absolute text-white-50" style="top: 25%; left: 5%;">
+                <p class="mb-2 text-warning">September 29, 2017</p>
+                <h4 class="mb-4">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. <br> Dolorum voluptas,
+                  aut ea
+                  quae!</h4>
+                <p class="mb-4">Alias earum, labore doloremque iusto a modi et, dolorem <br> veritatis iste quis ab.
+                  Facere
+                  est optio,
+                  voluptate molestias <br> aspernatur impedit perferendis odit?</p>
+                <button type="button" class="btn btn-outline-warning rounded-0 p-2 ms-2"
+                  style="width: 175px; height: 53px;">RESERVE A TABLE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <button class="btn btn-light d-flex w-100 mb-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseExample">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center mt-2">
+              <h3>28 <br> Sep</h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-start">
+              <p class="mt-3 fs-5 text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+                voluptas, aut ea quae!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-center">
+              <a href="#" type="button"
+                class="btn btn-outline-warning rounded-0 p-2 ms-2 d-flex justify-content-center align-items-center mt-3"
+                style="width: 175px; height: 53px;">RESERVE A TABLE</a>
+            </div>
+          </div>
+        </button>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            <div class="position-relative">
+              <div class="img">
+                <img src="./Images/10.jpg" class="img-fluid w-100" style="height: 575px; opacity: 0.6;" alt="">
+              </div>
+              <div class="content position-absolute text-white-50" style="top: 25%; left: 5%;">
+                <p class="mb-2 text-warning">September 28, 2017</p>
+                <h4 class="mb-4">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. <br> Dolorum voluptas,
+                  aut ea
+                  quae!</h4>
+                <p class="mb-4">Alias earum, labore doloremque iusto a modi et, dolorem <br> veritatis iste quis ab.
+                  Facere
+                  est optio,
+                  voluptate molestias <br> aspernatur impedit perferendis odit?</p>
+                <button type="button" class="btn btn-outline-warning rounded-0 p-2 ms-2"
+                  style="width: 175px; height: 53px;">RESERVE A TABLE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="news">
+      <div style="background-color: #E9ECEF; padding: 100px;">
+        <div class="container">
+          <div class="row">
+            <div class="title text-center">
+              <h3>Newsletter</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam illo <br> praesentium sequi in cum,
+                beatae maiores quae qui.</p>
+            </div>
+            <div class="input d-flex justify-content-center align-items-center mt-4">
+              <input type="text" class="bg-white border border-secondary-subtle me-2"
+                style="width: 385px; height: 55px;">
+              <button type="button" class="btn btn-outline-warning rounded-0 p-2 ms-2"
+                style="width: 140px; height: 55px;">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="title text-center mt-5">
+            <h3>Our gallery</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="gallery-img d-flex">
+            <div class="col-md-4">
+              <img src="./Images/11.jpg" class="img-fluid mb-3 mt-4" style="width: 360px; height: 200px;" alt="">
+              <img src="./Images/15.jpg" class="img-fluid mb-3" style="width: 360px; height: 240px;" alt="">
+              <img src="./Images/18.jpg" class="img-fluid mb-3" style="width: 360px; height: 240px;" alt="">
+            </div>
+            <div class="col-md-4">
+              <img src="./Images/16.jpg" class="img-fluid mb-3 mt-4" style="width: 360px; height: 540px;" alt="">
+              <img src="./Images/12.jpg" class="img-fluid mb-5" style="width: 360px; height: 235px;" alt="">
+            </div>
+            <div class="col-md-4">
+              <img src="./Images/13.jpg" class="img-fluid mb-3 mt-4" style="width: 360px; height: 240px;" alt="">
+              <img src="./Images/14.jpg" class="img-fluid mb-3" style="width: 360px; height: 270px;" alt="">
+              <img src="./Images/17.jpg" class="img-fluid mb-3" style="width: 360px; height: 215px;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content">
+            <h5 class="text-warning">About Us</h5>
+            <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Corrupti dolorum,
+              sint corporis <br> nostrum, possimus unde eos vitae eius quasi <br> saepe.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content">
+            <h5 class="text-warning">Contact info</h5>
+            <i class="bi bi-geo-alt-fill"></i><span class="text-white-50 ms-3">1234 Dining Str., Los Angeles,
+              CA 12345- <br> <span style="margin-left: 9.5%;">0000</span> </span>
+            <i class="bi bi-telephone-fill d-block"><span class="text-white-50 ms-3">+1 987 654 3210</span></i>
+            <i class="bi bi-envelope"><a href="#" class="ms-3">admin@domain.com</a></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="content">
+            <h5 class="text-warning">Opening hours</h5>
+            <p class="text-white-50">Monday - Thursday <br>
+              10:00 AM - 11:00 PM
+            </p>
+            <p class="text-white-50">
+              Friday - Sunday <br>
+              12:00 AM - 03:00 AM</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="bg-white d-inline-block" style="width: 35px; height: 2px;">
+          </div>
+          <p class="d-inline-block mt-3 ms-3">© 2021 Touché. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
 </body>
