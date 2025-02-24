@@ -1,9 +1,9 @@
 <h1>
-  ➡ Click Here ⬅
+  ➡ Click For Netlify ⬅
 </h1>
 https://touche-pr-bs.netlify.app/
 
 <h1>
-  ➡ Click Here ⬅
+  ➡ Click For Vercel ⬅
 </h1>
 https://toucheprbs.vercel.app/
